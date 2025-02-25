@@ -1,1 +1,127 @@
 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF - 8">
+    <title>Happy 20th Birthday!</title>
+    <style>
+        /* 整体页面布局和背景 */
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #f9d423, #ee5a24);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min - height: 100vh;
+            font - family: 'Poppins', sans - serif;
+        }
+
+        /* 生日祝福卡片容器 */
+       .celebration - card {
+            background: white;
+            padding: 40px;
+            border - radius: 10px;
+            box - shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text - align: center;
+            animation: cardFadeIn 1s ease - in - out;
+        }
+
+        /* 标题样式 */
+        h1 {
+            color: #ee5a24;
+            margin - bottom: 20px;
+            animation: textBounce 1s ease - in - out;
+        }
+
+        /* 段落样式 */
+        p {
+            color: #333;
+            line - height: 1.6;
+        }
+
+        /* 气球动画 */
+       .balloon {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            border - radius: 50%;
+            animation: balloonFloat 10s ease - in - out infinite;
+        }
+
+        /* 不同颜色的气球 */
+        #balloon1 {
+            background: pink;
+            left: 10%;
+            top: 10%;
+        }
+
+        #balloon2 {
+            background: lightblue;
+            right: 10%;
+            top: 20%;
+        }
+
+        #balloon3 {
+            background: yellow;
+            left: 20%;
+            bottom: 10%;
+        }
+
+        /* 动画关键帧定义 */
+        @keyframes cardFadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes textBounce {
+            0% {
+                transform: translateY(-20px);
+            }
+
+            50% {
+                transform: translateY(10px);
+            }
+
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes balloonFloat {
+            0% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-20px);
+            }
+
+            100% {
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="celebration - card">
+        <h1>Happy 20th Birthday, Sister!</h1>
+        <p>Dear sister, as a sunshine girl from Maoming, Guangdong, you are truly special.</p>
+        <p>Your 20th year is going to be filled with amazing adventures and beautiful memories.</p>
+        <p>May all your dreams come true and may you always shine bright like the star you are.</p>
+    </div>
+    <div id="balloon1" class="balloon"></div>
+    <div id="balloon2" class="balloon"></div>
+    <div id="balloon3" class="balloon"></div>
+</body>
+
+</html>
